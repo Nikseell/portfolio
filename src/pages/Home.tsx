@@ -3,10 +3,10 @@ import HeroSection from '../sections/Hero'
 
 function Home() {
   return (
-    <>
+    <Layout>
       <HeroSection />
       <HeroSection />
-    </>
+    </Layout>
   )
 }
 
