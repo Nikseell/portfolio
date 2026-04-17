@@ -7,8 +7,8 @@ interface LayoutProps {
 
 const Layout: FC<LayoutProps> = ({ children }) => {
   return (
-    <div className="min-h-screen w-full flex flex-col items-center">
-      <div className="flex flex-col w-full max-w-420">
+    <div className="min-h-screen w-full flex flex-col items-center justify-center">
+      <div className="flex flex-col w-full max-w-360">
         <Navigation />
         <main>{children}</main>
       </div>
