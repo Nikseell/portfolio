@@ -4,6 +4,13 @@
 @theme {
   --animate-marquee: marquee 40s linear infinite;
 
+  --color-bg: #0e0e0e;
+  --color-text: white;
+  --color-text-muted: #919191;
+  --color-text-primary: #e5e2e1;
+  --color-text-secondary: #3a3a3a;
+  --color-status-online: #5da35d;
+
   @keyframes marquee {
     from {
       transform: translateX(0);
@@ -18,11 +25,6 @@ body {
   font-family: 'JetBrains Mono', monospace;
   background-color: var(--color-bg);
   color: var(--color-text);
-}
-
-:root {
-  --color-bg: #0e0e0e;
-  --color-text: white;
 }
 
 h1,
