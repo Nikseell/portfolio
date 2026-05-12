@@ -1,12 +1,15 @@
 const Navigation = () => {
   return (
-    <nav className="fixed top-0 max-w-330 w-full z-50 bg-bg">
-      <div className="w-full mx-auto h-20 flex items-center uppercase justify-between">
-        <p className="text-md">Niklavs Laicans</p>
+    <nav className="fixed top-0 left-0 right-0 z-50 bg-bg/40 backdrop-blur-xs">
+      <div className="w-full h-16 flex items-center justify-between px-20">
+        <p className="text-2xl uppercase w-58">Niklavs Laicans</p>
         <div className="flex gap-12">
           {['Home', 'Experience', 'Work', 'Contact'].map((title, i) => (
-            <a>{title}</a>
+            <a>/{title}</a>
           ))}
+        </div>
+        <div className="flex justify-end w-58">
+          <button className="border py-2 px-4">Contact me</button>
         </div>
       </div>
     </nav>
