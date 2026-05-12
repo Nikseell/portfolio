@@ -1,5 +1,7 @@
 import DotGrid from '../components/DotGrid'
 
+const SKILLS = ['Web Applications', 'Game Development', 'Interactive Experiences'] as const
+
 function HeroSection() {
   return (
     <section className="flex flex-col justify-center pt-20 relative min-h-screen select-none">
@@ -17,34 +19,40 @@ function HeroSection() {
         />
       </div>
 
-      <div className="flex h-fit">
-        <div className="flex w-full items-center">
-          <p className="uppercase font-bold text-[220px] leading-40 tracking-tight">Niklavs</p>
-          <div className="flex flex-1 justify-end items-center">
-            <div className="flex flex-col gap-8 w-fit h-full">
-              <ul className="flex flex-col gap-2 list-disc pl-4 uppercase">
-                <li>Web Applications</li>
-                <li>Game Development</li>
-                <li>Interactive Experiences</li>
-              </ul>
-              <p className="text-text-muted">/Based in Latvia, Riga, 13:13 ( GMT+3 )</p>
-            </div>
+      <div className="flex w-full items-center">
+        <h1 className="uppercase font-bold text-[220px] leading-40 tracking-tight">Niklavs</h1>
+        <div className="flex flex-1 justify-end items-center">
+          <div className="flex flex-col gap-8 w-fit h-full">
+            <ul
+              aria-label="Specializations"
+              className="flex flex-col gap-2 list-disc pl-4 uppercase"
+            >
+              {SKILLS.map((skill) => (
+                <li key={skill}>{skill}</li>
+              ))}
+            </ul>
+            <p className="text-text-muted">
+              /Based in <span className="text-white">Latvia</span>, Riga,{' '}
+              <span className="bg-white text-black px-2">
+                {new Date().toLocaleTimeString('en-GB', {
+                  hour: '2-digit',
+                  minute: '2-digit',
+                  timeZone: 'Europe/Riga',
+                })}
+              </span>{' '}
+              <span className="text-white">( GMT+3 )</span>
+            </p>
           </div>
         </div>
       </div>
       <div>
-        <p className="uppercase font-bold text-[220px] leading-none tracking-tight text-right">Laicans</p>
+        <h1 className="uppercase font-bold text-[220px] leading-none tracking-tight text-right">Laicans</h1>
       </div>
-      <div className="pt-14">
-        <p className="w-md text-xl text-text-muted">
-          Experienced in <span className="text-white">React</span> and{' '}
-          <span className="text-white font-medium">Unity</span>, turning ideas into{' '}
-          <span className="text-white">well-crafted</span> products, every time.
-        </p>
-        {/* <p className="w-md text-xl text-text-muted">
-          I design conversion-focused websites that drive results. Helping ambitious brands stand out and connect.
-        </p> */}
-      </div>
+      <p className="w-md text-xl text-text-muted pt-14">
+        Experienced in <span className="text-white">React</span> and{' '}
+        <span className="text-white font-medium">Unity</span>, turning ideas into{' '}
+        <span className="text-white">well-crafted</span> products, every time.
+      </p>
     </section>
   )
 }
