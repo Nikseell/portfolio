@@ -1,36 +1,49 @@
+import DotGrid from '../components/DotGrid'
+
 function HeroSection() {
   return (
-    <section>
-      <div className="h-screen flex flex-col justify-center">
-        <div className="flex flex-col justify-center gap-4 h-full">
-          <div className="flex items-center gap-2 py-4">
-            <div className="bg-status-online h-1.5 w-1.5 animate-pulse rounded-full" />
-            <p className="text-text-muted uppercase font-extralight">Currently working on porfolio website</p>
-          </div>
-          <span className="flex flex-col gap-4">
-            <h1 className="text-[250px] leading-[0.8] tracking-tight font-bold uppercase">Creative</h1>
-            <h1 className="text-[250px] leading-[0.8] tracking-tight font-bold uppercase text-text-secondary">
-              Developer
-            </h1>
-          </span>
+    <section className="flex flex-col justify-center pt-20 relative min-h-screen select-none">
+      <div className="absolute inset-y-0 left-1/2 -translate-x-1/2 w-screen -z-10">
+        <DotGrid
+          dotSize={5}
+          gap={15}
+          baseColor="#141414"
+          activeColor="#ffffff"
+          proximity={120}
+          shockRadius={250}
+          shockStrength={5}
+          resistance={750}
+          returnDuration={1.5}
+        />
+      </div>
 
-          <p className="flex flex-col text-right pt-5">
-            <span className="uppercase text">Niklavs Laicans</span>
-            <span className="text-text-muted">Unity & React Developer - Riga, LV</span>
-          </p>
-          <div className="bg-gray-400/15 h-0.5 mt-10"></div>
-          <div className="flex gap-2 pt-4 justify-between">
-            <span className="flex gap-2">
-              <p className="uppercase text-text-muted">//</p>
-              <p className="uppercase">Always learning. Always building.</p>
-            </span>
-            <p className="w-2/4 text-text-muted">
-              Experienced developer with expertise in React and Unity, crafting engaging web applications and immersive
-              game experiences. Passionate about clean code, creative problem-solving, and bringing ambitious ideas to
-              life.
-            </p>
+      <div className="flex h-fit">
+        <div className="flex w-full items-center">
+          <p className="uppercase font-bold text-[220px] leading-40 tracking-tight">Niklavs</p>
+          <div className="flex flex-1 justify-end items-center">
+            <div className="flex flex-col gap-8 w-fit h-full">
+              <ul className="flex flex-col gap-2 list-disc pl-4 uppercase">
+                <li>Web Applications</li>
+                <li>Game Development</li>
+                <li>Interactive Experiences</li>
+              </ul>
+              <p className="text-text-muted">/Based in Latvia, Riga, 13:13 ( GMT+3 )</p>
+            </div>
           </div>
         </div>
+      </div>
+      <div>
+        <p className="uppercase font-bold text-[220px] leading-none tracking-tight text-right">Laicans</p>
+      </div>
+      <div className="pt-14">
+        <p className="w-md text-xl text-text-muted">
+          Experienced in <span className="text-white">React</span> and{' '}
+          <span className="text-white font-medium">Unity</span>, turning ideas into{' '}
+          <span className="text-white">well-crafted</span> products, every time.
+        </p>
+        {/* <p className="w-md text-xl text-text-muted">
+          I design conversion-focused websites that drive results. Helping ambitious brands stand out and connect.
+        </p> */}
       </div>
     </section>
   )
