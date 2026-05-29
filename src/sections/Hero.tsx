@@ -1,24 +1,8 @@
-import DotGrid from '../components/DotGrid'
-
 const SKILLS = ['Web Applications', 'Game Development', 'Interactive Experiences'] as const
 
 function HeroSection() {
   return (
     <section className="flex flex-col justify-center pt-20 relative min-h-screen select-none">
-      <div className="absolute inset-y-0 left-1/2 -translate-x-1/2 w-screen -z-10">
-        <DotGrid
-          dotSize={5}
-          gap={15}
-          baseColor="#141414"
-          activeColor="#ffffff"
-          proximity={120}
-          shockRadius={250}
-          shockStrength={5}
-          resistance={750}
-          returnDuration={1.5}
-        />
-      </div>
-
       <div className="flex w-full items-center">
         <h1 className="uppercase font-bold text-[220px] leading-40 tracking-tight">Niklavs</h1>
         <div className="flex flex-1 justify-end items-center">
