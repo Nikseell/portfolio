@@ -14,7 +14,7 @@ function HeroSection() {
           <div className="flex flex-col gap-8 w-fit h-full">
             <ul
               aria-label="Specializations"
-              className="flex flex-col gap-2 list-disc pl-4 uppercase"
+              className="flex flex-col gap-2 list-disc pl-4 uppercase font-medium"
             >
               {SKILLS.map((skill) => (
                 <li key={skill}>{skill}</li>
