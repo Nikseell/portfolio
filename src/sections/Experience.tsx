@@ -3,7 +3,7 @@ import { experienceData } from '../data/experience'
 const Experience = () => {
   return (
     <section>
-      <h1 className="uppercase font-bold text-[198px] leading-40 tracking-tight pb-26 text-center">My experience</h1>
+      <h1 className="uppercase font-bold text-[196px] leading-40 tracking-tight pb-26 text-center">My experience</h1>
       <div className="flex flex-col gap-10">
         {experienceData.map((experience) => (
           <div

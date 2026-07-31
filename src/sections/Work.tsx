@@ -6,7 +6,7 @@ const Work = () => {
 
   return (
     <section>
-      <h1 className="uppercase font-bold text-[176px] leading-40 tracking-tight pb-26 text-center">Selected works</h1>
+      <h1 className="uppercase font-bold text-[174px] leading-40 tracking-tight pb-26 text-center">Selected works</h1>
       <div className="flex flex-col gap-6">
         {displayedWorks.map((work) => (
           <WorkCard

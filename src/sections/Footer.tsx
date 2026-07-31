@@ -13,12 +13,12 @@ const Footer = () => {
           niklavs.laicans@gmail.com
         </a>
       </div>
-      <p className="uppercase font-bold text-[178px] leading-40 tracking-tight bg-linear-to-t from-black to-white bg-clip-text text-transparent">
+      <p className="uppercase font-bold text-[176px] leading-40 tracking-tight bg-linear-to-t from-black to-white bg-clip-text text-transparent">
         Niklavs Laicans
       </p>
       <div className="flex flex-col gap-4">
-        <div className="bg-text-secondary w-full h-px" />
-        <p>© {new Date().getFullYear()} Niklavs Laicans</p>
+        <div className="bg-text-muted w-full h-px" />
+        <p>© {new Date().getFullYear()} Niklavs Laicans. All rights reserved</p>
       </div>
     </section>
   )
