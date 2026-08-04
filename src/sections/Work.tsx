@@ -6,8 +6,12 @@ const Work = () => {
 
   return (
     <section>
-      <h1 className="uppercase font-bold text-[174px] leading-40 tracking-tight pb-26 text-center">Selected works</h1>
-      <div className="flex flex-col gap-6">
+      <div className="@container pb-6 xl:pb-16">
+        <h1 className="uppercase font-semibold text-[clamp(38px,11.3cqi,174px)] leading-20 md:leading-40 tracking-tight w-full text-center text-nowrap">
+          Selected works
+        </h1>
+      </div>
+      <div className="flex flex-col gap-10">
         {displayedWorks.map((work) => (
           <WorkCard
             key={work.title}

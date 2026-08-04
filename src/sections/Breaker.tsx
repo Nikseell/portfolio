@@ -9,7 +9,7 @@ const Breaker = () => {
   }, [])
 
   return (
-    <section className="flex justify-center -mt-30 -mb-20">
+    <section className="flex justify-center -mb-26">
       <video
         ref={videoRef}
         src="/glitch.mp4"
