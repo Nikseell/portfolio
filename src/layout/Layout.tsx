@@ -18,7 +18,7 @@ const Layout: FC<LayoutProps> = ({ children }) => {
 
   return (
     <div className="min-h-screen w-full flex flex-col items-center justify-center pb-20">
-      <div className="flex flex-col w-full max-w-386">
+      <div className="flex flex-col w-full max-w-400 px-4 lg:px-6">
         <Navigation />
         <main className="flex flex-col gap-46">{children}</main>
       </div>
