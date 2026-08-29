@@ -35,7 +35,7 @@ const About = () => {
             detail at a time.
           </p>
           <p className="lg:text-xl text-text-muted max-w-lg">Since 2021 — code, pixels, and everything between.</p>
-          <div className="flex flex-wrap gap-x-6 gap-y-4">
+          <div className="flex flex-wrap items-center gap-x-6 gap-y-4">
             {TECH_STACK.map((tech, i) => (
               <span
                 key={tech}
