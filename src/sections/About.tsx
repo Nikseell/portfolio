@@ -18,7 +18,10 @@ const TECH_SIZES = ['xl:text-lg', 'text-xl xl:text-2xl', 'xl:text-xl', 'text-xl 
 
 const About = () => {
   return (
-    <section className="@container">
+    <section
+      id="about"
+      className="@container"
+    >
       <h1 className="uppercase font-bold text-[clamp(43px,12.6cqi,200px)] tracking-tight text-center leading-tight">
         About Niklavs
       </h1>

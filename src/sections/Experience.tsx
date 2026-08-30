@@ -2,7 +2,7 @@ import { experienceData } from '../data/experience'
 
 const Experience = () => {
   return (
-    <section className="@container">
+    <section id="experience" className="@container">
       <h1 className="uppercase font-bold text-[clamp(42px,12.6cqi,200px)] leading-40 tracking-tight text-center lg:pb-20">
         My experience
       </h1>

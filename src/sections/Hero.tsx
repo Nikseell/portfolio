@@ -4,7 +4,7 @@ const SKILLS = ['Web Applications', 'Game Development', 'Interactive Experiences
 
 function HeroSection() {
   return (
-    <section className="flex flex-col justify-center pt-0 xl:pt-20 relative min-h-screen select-none">
+    <section id="home" className="flex flex-col justify-center pt-0 xl:pt-20 relative min-h-screen select-none">
       <div className="absolute inset-y-0 left-1/2 -translate-x-1/2 w-screen -z-10 hidden xl:block">
         <KineticGrid />
       </div>
