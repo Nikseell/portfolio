@@ -5,7 +5,7 @@ const Work = () => {
   const displayedWorks = workData.slice(0, 4)
 
   return (
-    <section>
+    <section id="work">
       <div className="@container pb-6 xl:pb-16">
         <h1 className="uppercase font-semibold text-[clamp(38px,11.3cqi,174px)] leading-20 md:leading-40 tracking-tight w-full text-center text-nowrap">
           Selected works

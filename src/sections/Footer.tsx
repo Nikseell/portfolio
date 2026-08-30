@@ -1,6 +1,9 @@
 const Footer = () => {
   return (
-    <section className="flex flex-col gap-4 lg:gap-10">
+    <section
+      id="contact"
+      className="flex flex-col gap-4 lg:gap-10"
+    >
       <div className="flex flex-col lg:flex-row lg:justify-between lg:items-center gap-6">
         <p className="max-w-xl md:text-xl">
           Glad you stopped by. Whether you have something on your mind or just want to connect, my inbox is open. Don't
