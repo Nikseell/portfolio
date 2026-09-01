@@ -8,7 +8,7 @@ const WorkCard = (props: Work) => {
         <p className="max-w-xl lg:text-xl leading-snug">{props.description}</p>
         <div className="flex gap-4 items-center uppercase text-sm pb-4">
           {props.tags.map((tag) => (
-            <div className="flex items-center gap-4">
+            <div key={tag} className="flex items-center gap-4">
               <div className="w-1.5 h-1.5 rounded-full bg-white shrink-0" />
               <p>{tag}</p>
             </div>
