@@ -1,3 +1,7 @@
+import { motion } from 'framer-motion'
+import Reveal from '../components/Reveal'
+import { fadeUp } from '../lib/animations'
+
 const TECH_STACK = [
   'Unity',
   'C#',
@@ -22,17 +26,33 @@ const About = () => {
       id="about"
       className="@container"
     >
-      <h1 className="uppercase font-bold text-[clamp(43px,12.6cqi,200px)] tracking-tight text-center leading-tight">
-        About Niklavs
-      </h1>
-      <p className="text-xl xl:text-2xl">/How I work</p>
-      <p className="text-3xl xl:text-5xl font-medium tracking-wide leading-snug pt-10 pb-10 xl:pb-16">
+      <Reveal
+        as={motion.div}
+        variants={fadeUp()}
+        inView
+      >
+        <h1 className="uppercase font-bold text-[clamp(43px,12.6cqi,200px)] tracking-tight text-center leading-tight">
+          About Niklavs
+        </h1>
+        <p className="text-xl xl:text-2xl">/How I work</p>
+      </Reveal>
+      <Reveal
+        as={motion.div}
+        variants={fadeUp()}
+        inView
+        className="text-3xl xl:text-5xl font-medium tracking-wide leading-snug pt-10 pb-10 xl:pb-16"
+      >
         I build things that work as good as they look. Equal parts developer and problem solver, I care about the system
         as much as the screen.
-      </p>
+      </Reveal>
       <div className="flex flex-col lg:flex-row gap-10 xl:gap-16 items-start lg:items-center">
         <div className="w-full lg:w-sm xl:w-2xl shrink-0 relative aspect-4/5 border border-white/10 overflow-hidden bg-white"></div>
-        <div className="flex-1 flex flex-col justify-center gap-10">
+        <Reveal
+          as={motion.div}
+          variants={fadeUp()}
+          inView
+          className="flex-1 flex flex-col justify-center gap-10"
+        >
           <p className="lg:text-xl xl:text-2xl max-w-lg">
             I like software that just works — no drama, no surprises. Most of what I do is chasing that quietly, one
             detail at a time.
@@ -50,7 +70,7 @@ const About = () => {
               </span>
             ))}
           </div>
-        </div>
+        </Reveal>
       </div>
     </section>
   )
