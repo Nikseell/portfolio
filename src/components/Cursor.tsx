@@ -5,8 +5,11 @@ import { ArrowUpRight } from 'lucide-react'
 const Cursor = () => {
   const [position, setPosition] = useState({ x: 0, y: 0 })
   const [hovering, setHovering] = useState(false)
+  const [isFinePointer] = useState(() => window.matchMedia('(pointer: fine)').matches)
 
   useEffect(() => {
+    if (!isFinePointer) return
+
     const move = (e: MouseEvent) => setPosition({ x: e.clientX, y: e.clientY })
 
     const handleOver = (e: MouseEvent) => {
@@ -26,7 +29,9 @@ const Cursor = () => {
       document.removeEventListener('mouseover', handleOver)
       document.removeEventListener('mouseout', handleOut)
     }
-  }, [])
+  }, [isFinePointer])
+
+  if (!isFinePointer) return null
 
   const variants = {
     default: { x: position.x - 16, y: position.y - 16, width: 32, height: 32 },

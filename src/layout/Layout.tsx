@@ -14,7 +14,7 @@ const Layout: FC<LayoutProps> = ({ children }) => {
         <Cursor />
         <div className="flex flex-col w-full max-w-400 px-4 lg:px-6">
           <Navigation />
-          <main className="flex flex-col gap-46">{children}</main>
+          <main className="flex flex-col gap-12 md:gap-46">{children}</main>
         </div>
       </div>
     </LenisProvider>
