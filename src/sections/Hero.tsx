@@ -17,6 +17,7 @@ function HeroSection() {
       <div className="flex w-full items-center flex-col-reverse xl:flex-row">
         <Reveal
           variants={swingUp()}
+          clip
           className="uppercase font-bold text-[clamp(80px,15vw,220px)] leading-none tracking-tight text-right"
         >
           Niklavs
@@ -31,7 +32,6 @@ function HeroSection() {
                 <Reveal
                   key={skill}
                   as={motion.li}
-                  clip={false}
                   variants={fadeUp(0.4 + i * 0.15, 5)}
                 >
                   {skill}
@@ -58,6 +58,7 @@ function HeroSection() {
       <div>
         <Reveal
           variants={swingUpReverse(0.2)}
+          clip
           className="uppercase font-bold text-[clamp(80px,15vw,220px)] leading-none tracking-tight text-right"
         >
           Laicans
