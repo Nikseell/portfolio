@@ -4,4 +4,5 @@ export interface Work {
   tags: string[]
   image?: string
   year: string
+  link?: string
 }

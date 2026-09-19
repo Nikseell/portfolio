@@ -1,4 +1,4 @@
-import { motion } from 'framer-motion'
+import { motion } from 'motion/react'
 import Reveal from '../components/Reveal'
 import { fadeUp } from '../lib/animations'
 import silhouette from '../assets/Silhouette.png'

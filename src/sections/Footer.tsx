@@ -11,6 +11,7 @@ const Footer = () => {
         </p>
         <a
           href="mailto:niklavs.laicans@gmail.com"
+          data-cursor-link
           className="md:text-2xl xl:text-3xl"
         >
           niklavs.laicans@gmail.com
