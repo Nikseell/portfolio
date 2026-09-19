@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion'
 import Reveal from '../components/Reveal'
 import { fadeUp } from '../lib/animations'
+import silhouette from '../assets/Silhouette.png'
 
 const TECH_STACK = [
   'Unity',
@@ -46,7 +47,13 @@ const About = () => {
         as much as the screen.
       </Reveal>
       <div className="flex flex-col lg:flex-row gap-10 xl:gap-16 items-start lg:items-center">
-        <div className="w-full lg:w-sm xl:w-2xl shrink-0 relative aspect-4/5 border border-white/10 overflow-hidden bg-white"></div>
+        <div className="w-full lg:w-sm xl:w-2xl shrink-0 relative aspect-4/5 overflow-hidden bg-white">
+          <img
+            src={silhouette}
+            alt=""
+            className="absolute inset-0 w-full h-full object-contain"
+          />
+        </div>
         <Reveal
           as={motion.div}
           variants={fadeUp()}

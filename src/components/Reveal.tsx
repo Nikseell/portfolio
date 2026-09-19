@@ -15,7 +15,7 @@ const Reveal = ({
   variants,
   as: Tag = motion.p,
   className,
-  clip = true,
+  clip = false,
   inView = false,
   children,
   ...rest
