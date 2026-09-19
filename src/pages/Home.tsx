@@ -1,5 +1,5 @@
 import Layout from '../layout/Layout'
-import HeroSection from '../sections/Hero'
+import Hero from '../sections/Hero'
 import Breaker from '../sections/Breaker'
 import Work from '../sections/Work'
 import Experience from '../sections/Experience'
@@ -9,7 +9,7 @@ import Footer from '../sections/Footer'
 function Home() {
   return (
     <Layout>
-      <HeroSection />
+      <Hero />
       <Breaker />
       <Work />
       <Experience />

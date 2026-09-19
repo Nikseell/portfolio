@@ -10,11 +10,11 @@ const Cursor = () => {
     const move = (e: MouseEvent) => setPosition({ x: e.clientX, y: e.clientY })
 
     const handleOver = (e: MouseEvent) => {
-      if ((e.target as HTMLElement).closest('img')) setHovering(true)
+      if ((e.target as HTMLElement).closest('[data-cursor-link]')) setHovering(true)
     }
 
     const handleOut = (e: MouseEvent) => {
-      if ((e.target as HTMLElement).closest('img')) setHovering(false)
+      if ((e.target as HTMLElement).closest('[data-cursor-link]')) setHovering(false)
     }
 
     window.addEventListener('mousemove', move)
@@ -35,7 +35,7 @@ const Cursor = () => {
 
   return (
     <motion.div
-      className="fixed top-0 left-0 rounded-full bg-white mix-blend-difference pointer-events-none z-9999 flex items-center justify-center"
+      className="fixed top-0 left-0 rounded-full bg-white mix-blend-difference pointer-events-none z-100 flex items-center justify-center"
       variants={variants}
       animate={hovering ? 'image' : 'default'}
       transition={{ type: 'tween', ease: 'easeOut', duration: 0.3 }}

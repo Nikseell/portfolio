@@ -13,7 +13,7 @@ const Work = () => {
         as={motion.h1}
         variants={fadeUp()}
         inView
-        className="@container pb-6 xl:pb-16 uppercase font-semibold text-[clamp(38px,11.3cqi,174px)] leading-20 md:leading-40 tracking-tight w-full text-center text-nowrap"
+        className="@container pb-6 xl:pb-16 uppercase font-semibold text-[clamp(38px,10.5cqi,176px)] leading-20 md:leading-40 tracking-tight w-full text-center text-nowrap"
       >
         Selected works
       </Reveal>

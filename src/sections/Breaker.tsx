@@ -11,7 +11,7 @@ const Breaker = () => {
   }, [])
 
   return (
-    <section className="flex justify-center -mb-26">
+    <section className="flex justify-center">
       <Reveal
         variants={fadeUp()}
         inView
@@ -25,7 +25,7 @@ const Breaker = () => {
           muted
           playsInline
           preload="metadata"
-          className="w-full h-auto object-cover grayscal rounded-2xl"
+          className="w-full h-auto object-cover grayscale rounded-2xl"
         />
       </Reveal>
     </section>

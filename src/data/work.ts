@@ -13,6 +13,7 @@ export const workData: Work[] = [
     tags: ['React', 'TypeScript'],
     image: portfolioWebsiteImage,
     year: '2025',
+    link: 'https://github.com/nikseell/portfolio-website',
   },
   {
     title: 'Minimal Portfolio Template',
@@ -21,6 +22,7 @@ export const workData: Work[] = [
     tags: ['React', 'TypeScript'],
     image: minimalPortfolioImage,
     year: '2025',
+    link: 'https://github.com/nikseell/minimal-portfolio-template',
   },
   {
     title: 'GitHub Traffic Frontend',
@@ -29,6 +31,7 @@ export const workData: Work[] = [
     tags: ['React', 'TypeScript', 'Shadcn UI'],
     image: githubTrafficFrontendImage,
     year: '2025',
+    link: 'https://github.com/nikseell/github-traffic-frontend',
   },
   {
     title: 'GitHub Traffic Backend',
@@ -37,6 +40,7 @@ export const workData: Work[] = [
     tags: ['NestJS', 'TypeScript'],
     image: githubTrafficFrontendImage,
     year: '2025',
+    link: 'https://github.com/nikseell/github-traffic-backend',
   },
   {
     title: 'Tic Tac Toe',
@@ -45,6 +49,7 @@ export const workData: Work[] = [
     tags: ['Unity', 'C#'],
     image: ticTacToeImage,
     year: '2023',
+    link: 'https://github.com/nikseell/tic-tac-toe',
   },
   {
     title: 'Google Trex Clone',
@@ -53,5 +58,6 @@ export const workData: Work[] = [
     tags: ['Unity', 'C#'],
     image: googleTrexCloneImage,
     year: '2023',
+    link: 'https://github.com/nikseell/google-trex-clone',
   },
 ]

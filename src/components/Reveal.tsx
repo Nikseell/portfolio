@@ -3,7 +3,7 @@ import { motion, useInView, type Variants } from 'motion/react'
 
 type RevealProps = {
   variants: Variants
-  as?: typeof motion.p | typeof motion.li | typeof motion.nav | typeof motion.ul | typeof motion.div
+  as?: typeof motion.p | typeof motion.li | typeof motion.nav | typeof motion.ul | typeof motion.div | typeof motion.h1
   className?: string
   clip?: boolean
   inView?: boolean
@@ -20,13 +20,13 @@ const Reveal = ({
   children,
   ...rest
 }: RevealProps) => {
-  const observeRef = useRef<any>(null)
+  const observeRef = useRef<HTMLElement>(null)
   const isIntersecting = useInView(observeRef, { once: true, amount: 0.4 })
   const animateState = inView ? (isIntersecting ? 'visible' : 'hidden') : 'visible'
 
   const content = (
     <Tag
-      ref={clip ? undefined : observeRef}
+      ref={clip ? undefined : (observeRef as React.Ref<never>)}
       variants={variants}
       initial="hidden"
       animate={animateState}
@@ -39,7 +39,7 @@ const Reveal = ({
 
   return clip ? (
     <div
-      ref={observeRef}
+      ref={observeRef as React.Ref<HTMLDivElement>}
       className="overflow-clip"
     >
       {content}

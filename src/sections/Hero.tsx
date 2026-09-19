@@ -2,10 +2,25 @@ import { motion } from 'motion/react'
 import KineticGrid from '../components/KineticGrid'
 import Reveal from '../components/Reveal'
 import { swingUp, fadeUp, swingUpReverse } from '../lib/animations'
+import { useEffect, useState } from 'react'
 
 const SKILLS = ['Web Applications', 'Game Development', 'Interactive Experiences'] as const
 
-function HeroSection() {
+const Hero = () => {
+  const getRigaTime = () =>
+    new Date().toLocaleTimeString('en-GB', {
+      hour: '2-digit',
+      minute: '2-digit',
+      timeZone: 'Europe/Riga',
+    })
+
+  const [time, setTime] = useState(getRigaTime)
+
+  useEffect(() => {
+    const interval = setInterval(() => setTime(getRigaTime()), 1000 * 60)
+    return () => clearInterval(interval)
+  }, [])
+
   return (
     <section
       id="home"
@@ -43,13 +58,7 @@ function HeroSection() {
               className="text-text-muted pb-8 md:pb-0 text-xs md:text-base"
             >
               /Based in <span className="text-white">Latvia</span>, Riga,{' '}
-              <span className="bg-white text-black px-2">
-                {new Date().toLocaleTimeString('en-GB', {
-                  hour: '2-digit',
-                  minute: '2-digit',
-                  timeZone: 'Europe/Riga',
-                })}
-              </span>
+              <span className="bg-white text-black px-2">{time}</span>
               <span className="text-white"> ( GMT+3 )</span>
             </Reveal>
           </div>
@@ -76,4 +85,4 @@ function HeroSection() {
   )
 }
 
-export default HeroSection
+export default Hero
