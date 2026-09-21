@@ -35,7 +35,7 @@ const Navigation = () => {
         variants={fadeDown(0.6)}
         className="fixed top-0 left-0 right-0 z-50 bg-bg/40 backdrop-blur-xs hidden lg:flex"
       >
-        <div className="w-full h-16 flex items-center justify-between max-w-400 mx-auto">
+        <div className="w-full h-16 flex items-center justify-between max-w-400 mx-auto px-4 lg:px-6">
           <button
             type="button"
             onClick={() => scrollToSection('home')}
