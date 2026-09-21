@@ -4,7 +4,7 @@ import type { Work } from '../types/work'
 const WorkCard = (props: Work) => {
   return (
     <div className="flex flex-col lg:flex-row gap-4">
-      <div className="flex flex-1 flex-col gap-4 py-1">
+      <div className="flex flex-1 flex-col gap-4 py-1 order-2 lg:order-0">
         <p className="max-w-xl lg:text-xl leading-snug">{props.description}</p>
         <div className="flex gap-4 items-center uppercase text-sm pb-4">
           {props.tags.map((tag) => (
