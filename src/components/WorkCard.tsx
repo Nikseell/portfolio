@@ -23,7 +23,7 @@ const WorkCard = (props: Work) => {
           href={props.link}
           target="_blank"
           rel="noopener noreferrer"
-          data-cursor-link
+          data-cursor-link="GitHub"
           className="block aspect-square sm:aspect-auto lg:aspect-7/4 xl:aspect-3/2 2xl:aspect-auto overflow-hidden group"
         >
           <img
