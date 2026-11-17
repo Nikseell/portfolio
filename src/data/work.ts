@@ -25,22 +25,17 @@ export const workData: Work[] = [
     link: 'https://github.com/Nikseell/portfolio-website-template',
   },
   {
-    title: 'GitHub Traffic Frontend',
+    title: 'GitHub Traffic',
     description:
-      'A dashboard for visualizing GitHub repository traffic — views, clones, and referrers — with charts and filtering by date range.',
-    tags: ['React', 'TypeScript', 'Shadcn UI'],
+      "A full-stack dashboard for GitHub repository traffic. A NestJS API collects views, clones and referrers and stores them, so the React frontend can chart trends past GitHub's 14-day limit.",
+    tags: ['React', 'NestJS', 'TypeScript'],
     image: githubTrafficFrontendImage,
     year: '2025',
     link: 'https://github.com/nikseell/github-traffic-frontend',
-  },
-  {
-    title: 'GitHub Traffic Backend',
-    description:
-      'A NestJS REST API that fetches GitHub traffic data via the GitHub API and persists it to a database, enabling historical trend analysis.',
-    tags: ['NestJS', 'TypeScript'],
-    image: githubTrafficFrontendImage,
-    year: '2025',
-    link: 'https://github.com/nikseell/github-traffic-backend',
+    repos: [
+      { label: 'Frontend', url: 'https://github.com/nikseell/github-traffic-frontend' },
+      { label: 'Backend', url: 'https://github.com/nikseell/github-traffic-backend' },
+    ],
   },
   {
     title: 'Tic Tac Toe',

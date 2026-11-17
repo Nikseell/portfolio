@@ -1,3 +1,4 @@
+import { ArrowUpRight } from 'lucide-react'
 import Default from '../assets/projects/github-traffic-frontend.png'
 import type { Work } from '../types/work'
 
@@ -12,11 +13,27 @@ const WorkCard = (props: Work) => {
               key={tag}
               className="flex items-center gap-4"
             >
-              <div className="w-1.5 h-1.5 rounded-full bg-white shrink-0" />
+              <div className="size-1.5 rounded-full bg-white shrink-0" />
               <p>{tag}</p>
             </div>
           ))}
         </div>
+        {props.repos && (
+          <div className="flex gap-6 uppercase text-sm">
+            {props.repos.map((repo) => (
+              <a
+                key={repo.url}
+                href={repo.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-1 text-text-muted hover:text-white transition-colors"
+              >
+                {repo.label} repo
+                <ArrowUpRight className="size-4" />
+              </a>
+            ))}
+          </div>
+        )}
       </div>
       <div className="flex-1">
         <a

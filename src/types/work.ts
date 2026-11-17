@@ -5,4 +5,5 @@ export interface Work {
   image?: string
   year: string
   link?: string
+  repos?: { label: string; url: string }[]
 }
