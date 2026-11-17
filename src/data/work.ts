@@ -1,28 +1,28 @@
 import { type Work } from '../types/work'
-import minimalPortfolioImage from '../assets/projects/minimal-portfolio-template.png'
+import portfolioWebsiteImage from '../assets/projects/portfolio-website.png'
 import githubTrafficFrontendImage from '../assets/projects/github-traffic-frontend.png'
 import ticTacToeImage from '../assets/projects/tic-tac-toe.png'
 import googleTrexCloneImage from '../assets/projects/google-trex-clone.png'
-import portfolioWebsiteImage from '../assets/projects/portfolio-website.png'
+import portfolioWebsiteTemplateImage from '../assets/projects/portfolio-website-template.png'
 
 export const workData: Work[] = [
   {
     title: 'Portfolio Website',
     description:
-      'A personal portfolio built with React and TypeScript, featuring smooth scrolling, interactive backgrounds, and a clean minimal design.',
+      "The site you're looking at. A dark, minimal portfolio with an interactive grid hero, Lenis smooth scrolling, scroll-triggered reveals and a custom blend-mode cursor.",
     tags: ['React', 'TypeScript'],
     image: portfolioWebsiteImage,
-    year: '2025',
-    link: 'https://github.com/nikseell/portfolio-website',
+    year: '2026',
+    link: 'https://github.com/Nikseell/portfolio',
   },
   {
-    title: 'Minimal Portfolio Template',
+    title: 'Portfolio Website v1',
     description:
-      'A ready-to-use minimal portfolio template built for developers. Drop in your content, customize the colors, and deploy in minutes.',
+      "My earlier portfolio, built with React and TypeScript. Smooth scrolling, interactive backgrounds and a clean, minimal design, before it was replaced by the site you're on now.",
     tags: ['React', 'TypeScript'],
-    image: minimalPortfolioImage,
+    image: portfolioWebsiteTemplateImage,
     year: '2025',
-    link: 'https://github.com/nikseell/minimal-portfolio-template',
+    link: 'https://github.com/Nikseell/portfolio-website-template',
   },
   {
     title: 'GitHub Traffic Frontend',
